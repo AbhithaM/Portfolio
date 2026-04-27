@@ -2,14 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
 
   return (
     <Container fluid className="footer" style={{ position: "relative" }}>
@@ -35,7 +31,7 @@ function Footer() {
               <a
                 href="https://github.com/AbhithaM"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub size={30} />
@@ -43,7 +39,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/abhitha-m-95125b2a1/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn size={30} />
