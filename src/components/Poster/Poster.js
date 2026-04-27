@@ -1,86 +1,33 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Modal, Button } from "react-bootstrap"; // For flexible grid layout and modal
-import posterImage1 from "./emotion.png";
-import posterImage2 from "./suicide.png";
-import posterImage3 from "./poster3.png"; // Replace with your image
-import posterImage4 from "./poster4.png"; // Replace with your image
-import posterImage5 from "./poster5.png"; // Replace with your image
-import "./Poster.css";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import Particle from "../Particle";
+import sustainable from "./SUSTAINABILITY AND BIOTECH DAY.png";
+import artboard1 from "./Copy of Artboard 1.png";
+import artboard2 from "./Copy of Artboard 2.png";
 
 function Poster() {
-  const [show, setShow] = useState(false); // State to manage modal visibility
-  const [selectedImage, setSelectedImage] = useState(""); // State to store the selected image
-
-  const handleClose = () => setShow(false);
-  const handleShow = (image) => {
-    setSelectedImage(image);
-    setShow(true);
-  };
-
   return (
-    <Container fluid className="poster-section">
-      <Row className="justify-content-center">
-        <Col md={12} className="text-center mb-4">
-          {/* Adding Text Above the Posters */}
-          <h1 style={{ color: "#fff" }}>My Posters Gallery</h1>
-          <p style={{ color: "#fff", fontSize: "1.2rem" }}>
-            Click on any poster to view it in full size.
-          </p>
-        </Col>
-
-        <Col md={2} className="poster-container">
-          <img
-            src={posterImage1}
-            alt="Poster 1"
-            className="poster-image"
-            onClick={() => handleShow(posterImage1)} // Trigger modal on click
-          />
-        </Col>
-        <Col md={2} className="poster-container">
-          <img
-            src={posterImage2}
-            alt="Poster 2"
-            className="poster-image"
-            onClick={() => handleShow(posterImage2)}
-          />
-        </Col>
-        <Col md={2} className="poster-container">
-          <img
-            src={posterImage3}
-            alt="Poster 3"
-            className="poster-image"
-            onClick={() => handleShow(posterImage3)}
-          />
-        </Col>
-        <Col md={2} className="poster-container">
-          <img
-            src={posterImage4}
-            alt="Poster 4"
-            className="poster-image"
-            onClick={() => handleShow(posterImage4)}
-          />
-        </Col>
-        <Col md={2} className="poster-container">
-          <img
-            src={posterImage5}
-            alt="Poster 5"
-            className="poster-image"
-            onClick={() => handleShow(posterImage5)}
-          />
-        </Col>
-      </Row>
-
-      {/* Modal to show the full image */}
-      <Modal show={show} onHide={handleClose} centered>
-        <Modal.Body>
-          <img src={selectedImage} alt="Full Poster" className="full-image" />
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
+    <Container fluid className="project-section">
+      <Particle />
+      <Container>
+        <h1 className="project-heading">
+          My <strong className="purple">Posters </strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Here are some of the posters I've designed.
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={12} className="project-card" style={{ marginBottom: "20px", textAlign: "center" }}>
+            <img src={sustainable} alt="Sustainability and Biotech Day" style={{ maxWidth: "100%", maxHeight: "600px", borderRadius: "10px", border: "1px solid rgba(255, 255, 255, 0.2)" }} />
+          </Col>
+          <Col md={12} className="project-card" style={{ marginBottom: "20px", textAlign: "center" }}>
+            <img src={artboard1} alt="Visiting Card - Falcon Cricket Academy" style={{ maxWidth: "100%", maxHeight: "600px", borderRadius: "10px", border: "1px solid rgba(255, 255, 255, 0.2)" }} />
+          </Col>
+          <Col md={12} className="project-card" style={{ marginBottom: "20px", textAlign: "center" }}>
+            <img src={artboard2} alt="Poster - Falcon Cricket Academy" style={{ maxWidth: "100%", maxHeight: "600px", borderRadius: "10px", border: "1px solid rgba(255, 255, 255, 0.2)" }} />
+          </Col>
+        </Row>
+      </Container>
     </Container>
   );
 }

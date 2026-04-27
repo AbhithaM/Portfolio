@@ -2,13 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-
+import sustainable from "../../components/Poster/SUSTAINABILITY AND BIOTECH DAY.png";
+import artboard1 from "../../components/Poster/Copy of Artboard 1.png";
+import artboard2 from "../../components/Poster/Copy of Artboard 2.png";
 
 function Projects() {
   return (
@@ -24,54 +20,28 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={sustainable}
               isBlog={false}
-              title="Inventory Management"
-              description="The Inventory Manager is a user-friendly application designed to organize and manage products and stock efficiently. It allows users to add, track, and update inventory seamlessly while ensuring data accuracy. With intuitive features, it simplifies monitoring stock levels and managing supply chains."
-              ghLink="https://github.com/PagalavanKS/Anbu-Printing-offset-Consultancy"            
+              title="Sustainability and Biotech Day"
+              description="A vibrant poster designed for Sustainability and Biotech Day, highlighting eco-friendly initiatives and innovation."
             />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={artboard1}
               isBlog={false}
-              title="Contact Manager"
-              description="The Contact Manager is a user-friendly application designed to organize and manage personal and professional contacts efficiently. It allows users to store, search, and update contact information seamlessly while ensuring data security. With intuitive features, it simplifies staying connected and managing relationships."
-              ghLink="https://github.com/PagalavanKS/Contact_Manager_v2"            
+              title="Visiting Card - Falcon Cricket Academy"
+              description="Designed a professional visiting card for Falcon Cricket Academy using Adobe Illustrator. Developed a layout that reflected the academy's brand identity."
             />
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={artboard2}
               isBlog={false}
-              title="Hostel Managment"
-              description="A comprehensive solution designed to streamline hostel operations, including room allocation, resident records, and fee tracking. This system enhances efficiency, reduces administrative workload, and ensures seamless management of daily hostel activities."
-              ghLink="https://github.com/PagalavanKS/Hostel-Management-System"
-
+              title="Poster - Falcon Cricket Academy"
+              description="Created an advertisement poster for Falcon Cricket Academy to promote its services. Utilized Adobe Illustrator to design with a strong visual appeal."
             />
           </Col>
-<Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Country Cart"
-              description="The Country Cart project is an e-commerce platform tailored to showcase and sell local products, promoting regional businesses and culture. It combines user-friendly design with advanced features for seamless shopping and personalized customer experiences."
-              ghLink="https://github.com/pradeep-145/Country-cart"            
-            />
-          </Col>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Generative AI intership"
-              description="The Generative AI Internship offers hands-on experience in developing cutting-edge AI models for creative applications. Interns will explore technologies like deep learning, natural language processing, and generative design to create innovative solutions."
-              ghLink="https://github.com/PagalavanKS/Generative_AI-intership"
-            />
-          </Col>
-          
-
-          
-          
         </Row>
       </Container>
     </Container>

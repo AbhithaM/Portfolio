@@ -5,23 +5,13 @@ import {
   DiIllustrator,
 } from "react-icons/di";
 import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
   SiCanva,
-  SiMacos,
+  SiFigma,
 } from "react-icons/si";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiIllustrator />
       </Col>
@@ -30,6 +20,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiCanva />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFigma />
       </Col>
       </Row>
   );

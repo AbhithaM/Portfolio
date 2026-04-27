@@ -15,7 +15,7 @@ function Footer() {
     <Container fluid className="footer" style={{ position: "relative" }}>
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Pagalavan K S</h3>
+          <h3>Designed and Developed by Abhitha M</h3>
         </Col>
       </Row>
       <Row>
@@ -33,7 +33,7 @@ function Footer() {
               }}
             >
               <a
-                href="https://github.com/PagalavanKS"
+                href="https://github.com/AbhithaM"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -41,7 +41,7 @@ function Footer() {
                 <AiFillGithub size={30} />
               </a>
               <a
-                href="https://www.linkedin.com/in/pagalavanks/"
+                href="https://www.linkedin.com/in/abhitha-m-95125b2a1/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"

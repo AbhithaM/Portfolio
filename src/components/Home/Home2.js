@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/beautiful-girl-with-blue-hair-avatar-of-woman-for-social-network-vector.jpg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -19,33 +19,18 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            I’m a MERN stack developer with a keen interest in graphic design.… 🤷‍♂️
+            I’m a UI/UX designer with a keen interest in graphic design.… 🤷‍♂️
               <br />
               <br />Proficient in tools like 
               <i>
-                <b className="purple"> PhotoShop, Illustrator and Canva</b>
+                <b className="purple"> Canva, Figma, and Adobe Illustrator</b>
               </i>
               <br />
               <br />
-              I enjoy crafting visually engaging posters and banners. &nbsp;
-              <i>
-                <b className="purple"> </b>
-                <b className="purple">
-                </b>
-              </i>
+              I enjoy crafting visually engaging interfaces, posters, and banners. &nbsp;
               <br />
               <br />
               My work blends technical precision with creative flair, allowing me to build both functional and visually compelling digital experiences.
-              with <b className="purple"></b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                </b>
-              </i>
-              &nbsp; 
-              <i>
-                <b className="purple"></b>
-              </i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -63,7 +48,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/PagalavanKS"
+                  href="https://github.com/AbhithaM"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -73,7 +58,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/pagalavanks/"
+                  href="https://www.linkedin.com/in/abhitha-m-95125b2a1/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
