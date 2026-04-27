@@ -9,7 +9,6 @@ import {
   DiPython,
   DiGit,
   DiJava,
-  DiPhotoshop,
 } from "react-icons/di";
 
 
